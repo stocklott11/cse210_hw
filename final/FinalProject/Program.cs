@@ -13,10 +13,10 @@ namespace BudgetManager
             while (true)
             {
                 Console.WriteLine("\nMenu:");
-                Console.WriteLine("1. Add Income");
-                Console.WriteLine("2. Add Expense");
-                Console.WriteLine("3. View Budget Summary");
-                Console.WriteLine("4. Set Savings Goal");
+                Console.WriteLine("1. Set a Savings Goal");
+                Console.WriteLine("2. Add an Expense");
+                Console.WriteLine("3. Add Income");
+                Console.WriteLine("4. View Your Budget Summary");
                 Console.WriteLine("5. Exit");
 
                 Console.Write("Choose an option: ");
@@ -27,16 +27,16 @@ namespace BudgetManager
                     switch (choice)
                     {
                         case "1":
-                            AddIncome();
+                            SetSavingsGoal();
                             break;
                         case "2":
                             AddExpense();
                             break;
                         case "3":
-                            ViewSummary();
+                            AddIncome();
                             break;
                         case "4":
-                            SetSavingsGoal();
+                            ViewSummary();
                             break;
                         case "5":
                             Console.WriteLine("Thank you for using the Budget Manager. Goodbye!");
